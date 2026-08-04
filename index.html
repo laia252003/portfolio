@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portfolio de Laia Ferran, dissenyadora UX/UI especialitzada en recerca, arquitectura de la informació, prototipatge i contingut digital." />
+  <title>Laia Ferran · UX/UI Designer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="brand" aria-label="Inici">LF<span>.</span></a>
+    <nav class="main-nav" aria-label="Navegació principal">
+      <a href="#work" data-i18n="navWork">Projectes</a>
+      <a href="#about" data-i18n="navAbout">Sobre mi</a>
+      <a href="#contact" data-i18n="navContact">Contacte</a>
+    </nav>
+    <div class="language-switcher" aria-label="Selector d'idioma">
+      <button class="lang-btn active" data-lang="ca">CAT</button>
+      <button class="lang-btn" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero section-shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow" data-i18n="heroEyebrow">UX/UI DESIGNER · BARCELONA</p>
+        <h1>
+          <span data-i18n="heroLine1">Entendre les persones</span><br>
+          <span class="accent-text" data-i18n="heroLine2">per dissenyar millor.</span>
+        </h1>
+        <p class="hero-description" data-i18n="heroText">
+          Creo experiències digitals clares, útils i amb sentit combinant recerca, contingut, arquitectura de la
+          informació i disseny visual.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work" data-i18n="seeProjects">Veure projectes</a>
+          <a class="button button-ghost" href="#contact" data-i18n="contactMe">Contacta'm</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orb orb-pink"></div>
+        <div class="orb orb-orange"></div>
+        <div class="profile-card">
+          <span class="profile-number">01</span>
+          <p>Research<br>Content<br>Interface</p>
+        </div>
+        <div class="floating-note">User-centered<br>by default ✦</div>
+      </div>
+    </section>
+
+    <section class="intro-strip">
+      <p data-i18n="introStrip">Començo en UX, però porto anys treballant amb comunicació, continguts digitals, SEO i
+        dades. Aquest perfil híbrid és el meu valor diferencial.</p>
+    </section>
+
+    <section id="work" class="section-shell section-block">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="selectedWork">PROJECTES SELECCIONATS</p>
+        <h2 data-i18n="workTitle">Pocs projectes, explicats amb criteri.</h2>
+        <p data-i18n="workIntro">No cal tenir vint casos d'estudi: cal mostrar com penses, quines decisions prens i què
+          aprens durant el procés.</p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <div class="project-image-wrap project-image-real">
+          <img src="assets/can-figueras-capture.png" alt="Captura del projecte Can Figueras" loading="lazy" />
+        </div>
+        <div class="project-content">
+          <div class="project-topline"><span>01</span><span data-i18n="project1Type">UX/UI · FRONT-END</span></div>
+          <h3>Can Figueras</h3>
+          <p data-i18n="project1Text">Disseny i desenvolupament d'una web responsive per a una marca de cava, des de la
+            identitat visual fins a la validació d'accessibilitat i SEO.</p>
+          <ul class="tag-list">
+            <li>Design Thinking</li>
+            <li>Figma</li>
+            <li>Maze</li>
+            <li>Bootstrap 5</li>
+            <li>SEO</li>
+            <li>Accessibility</li>
+          </ul>
+          <button class="text-link project-toggle" data-project="project1" data-i18n="viewCase">Veure cas
+            d'estudi</button>
+        </div>
+        <div class="case-study" id="project1">
+          <div><strong data-i18n="challenge">Repte</strong>
+            <p data-i18n="project1Challenge">Comunicar tradició, proximitat i qualitat, facilitant alhora la navegació,
+              la compra i la confiança.</p>
+          </div>
+          <div><strong data-i18n="process">Procés</strong>
+            <p data-i18n="project1Process">Buyer persona, customer journey, wireframes, prototip interactiu, test amb
+              Maze i implementació front-end.</p>
+          </div>
+          <div><strong data-i18n="result">Resultat</strong>
+            <p data-i18n="project1Result">Una experiència clara, coherent i responsive amb una identitat pròpia i
+              criteris d'accessibilitat.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project project-card reveal">
+          <div class="project-image-wrap project-image-real project-image-mnac">
+            <img src="assets/mnac-wireframes.png" alt="Wireframes de baixa fidelitat del projecte MNAC Education"
+              loading="lazy" />
+          </div>
+          <div class="project-content">
+            <div class="project-topline"><span>02</span><span data-i18n="project2Type">ARQUITECTURA D'INFORMACIÓ</span>
+            </div>
+            <h3>MNAC Education</h3>
+            <p data-i18n="project2Text">Estructura d'una plataforma educativa perquè docents i estudiants puguin trobar,
+              explorar i organitzar recursos del museu.</p>
+            <ul class="tag-list">
+              <li>Card sorting</li>
+              <li>User journeys</li>
+              <li>Content tree</li>
+              <li>Low-fi</li>
+              <li>Figma</li>
+            </ul>
+            <button class="text-link project-toggle" data-project="project2" data-i18n="viewCase">Veure cas
+              d'estudi</button>
+          </div>
+          <div class="case-study" id="project2">
+            <div><strong data-i18n="challenge">Repte</strong>
+              <p data-i18n="project2Challenge">Organitzar una gran quantitat de continguts educatius per a perfils i
+                necessitats diferents.</p>
+            </div>
+            <div><strong data-i18n="process">Procés</strong>
+              <p data-i18n="project2Process">Escenaris d'ús, inventari de continguts, card sorting obert, arbre de
+                continguts i prototip mòbil.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="project project-card reveal">
+          <div class="project-image-wrap project-image-real"><img src="assets/sentibot-capture.png"
+              alt="Captura del projecte Sentibot" loading="lazy" /></div>
+          <div class="project-content">
+            <div class="project-topline"><span>03</span><span data-i18n="project3Type">PRODUCT DESIGN · AI</span></div>
+            <h3>Sentibot</h3>
+            <p data-i18n="project3Text">Prototip d'una eina amb IA per visualitzar el sentiment dels comentaris i
+              facilitar la gestió de respostes.</p>
+            <ul class="tag-list">
+              <li>Figma</li>
+              <li>AI</li>
+            </ul>
+            <button class="text-link project-toggle" data-project="project3" data-i18n="viewCase">Veure cas
+              d'estudi</button>
+          </div>
+          <div class="case-study" id="project3">
+            <div><strong data-i18n="challenge">Repte</strong>
+              <p data-i18n="project3Challenge">Convertir dades complexes de sentiment en una interfície fàcil
+                d'interpretar.</p>
+            </div>
+            <div><strong data-i18n="process">Procés</strong>
+              <p data-i18n="project3Process">Definició del flux principal, jerarquia visual, disseny de dashboard i
+                prototipatge en Figma.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about-section section-block">
+      <div class="section-shell about-grid">
+        <div class="about-title reveal">
+          <p class="eyebrow" data-i18n="aboutEyebrow">SOBRE MI</p>
+          <h2 data-i18n="aboutTitle">Una dissenyadora que ve de la comunicació.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p data-i18n="aboutText1">Soc graduada en Comunicació Interactiva per la UAB i actualment curso el Màster de
+            Disseny d'Interacció i Experiència d'Usuari a la UOC.</p>
+          <p data-i18n="aboutText2">La meva experiència en contingut digital, UX writing i SEO m'ajuda a dissenyar
+            productes que no només funcionen bé, sinó que també s'entenen.</p>
+          <div class="skills-grid">
+            <div><span>01</span><strong>UX Research</strong>
+              <p>Persones, journeys, testing, card sorting</p>
+            </div>
+            <div><span>02</span><strong>UX/UI Design</strong>
+              <p>Figma, Miro, prototyping, user flows</p>
+            </div>
+            <div><span>03</span><strong>Content</strong>
+              <p>UX writing, SEO, information design</p>
+            </div>
+            <div><span>04</span><strong>Tech & data</strong>
+              <p>HTML, CSS, analytics, visualization</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-section section-shell section-block">
+      <div class="section-heading reveal">
+        <p class="eyebrow" data-i18n="processEyebrow">COM TREBALLO</p>
+        <h2 data-i18n="processTitle">Primer entendre. Després, dissenyar.</h2>
+      </div>
+      <div class="process-list">
+        <div class="process-item reveal"><span>01</span>
+          <h3 data-i18n="step1Title">Escolto</h3>
+          <p data-i18n="step1Text">Investigo el context, les necessitats i els punts de fricció.</p>
+        </div>
+        <div class="process-item reveal"><span>02</span>
+          <h3 data-i18n="step2Title">Ordeno</h3>
+          <p data-i18n="step2Text">Transformo informació complexa en estructures clares.</p>
+        </div>
+        <div class="process-item reveal"><span>03</span>
+          <h3 data-i18n="step3Title">Prototipo</h3>
+          <p data-i18n="step3Text">Converteixo idees en fluxos i interfícies tangibles.</p>
+        </div>
+        <div class="process-item reveal"><span>04</span>
+          <h3 data-i18n="step4Title">Valido</h3>
+          <p data-i18n="step4Text">Testo, aprenc i itero amb criteris d'usabilitat i accessibilitat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div class="section-shell reveal">
+        <p class="eyebrow" data-i18n="contactEyebrow">PARLEM?</p>
+        <h2 data-i18n="contactTitle">Busco la meva primera oportunitat com a UX/UI Designer.</h2>
+        <p data-i18n="contactText">M'interessen equips on pugui aprendre, aportar una mirada transversal i créixer
+          treballant en productes digitals útils.</p>
+        <div class="contact-methods">
+          <a class="contact-email" href="mailto:laiaferran@gmail.com">laiaferran@gmail.com</a>
+          <a class="contact-phone" href="tel:+34634511133">+34 634511133</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <p data-i18n="footerText">Dissenyat i desenvolupat amb curiositat.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
